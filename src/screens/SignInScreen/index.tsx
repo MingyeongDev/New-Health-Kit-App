@@ -6,6 +6,7 @@ import CustomTextInput from '../../components/input';
 import CustomButton from '../../components/button';
 import {navigate} from '../../RootNavigation';
 import CustomText from '../../components/text';
+import Icon from 'react-native-vector-icons/EvilIcons';
 
 const SignInScreen = () => {
   return (
@@ -15,7 +16,10 @@ const SignInScreen = () => {
       </View>
 
       <View style={styles.inputContainer}>
-        <CustomText color={colors.green}>회원가입</CustomText>
+        <View style={styles.signupButton}>
+          <Icon name="chevron-right" size={24} color={colors.green} />
+          <CustomText color={colors.green}>회원가입</CustomText>
+        </View>
 
         <View style={{gap: 8}}>
           <CustomTextInput placeholder={'이메일을 입력해주세요.'} />

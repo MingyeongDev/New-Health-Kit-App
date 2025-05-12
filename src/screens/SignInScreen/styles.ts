@@ -17,6 +17,10 @@ export const styles = StyleSheet.create({
     paddingBottom: 30,
     gap: 25,
   },
+  signupButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
   buttonContainer: {
     alignItems: 'center',
   },
